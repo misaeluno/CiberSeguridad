@@ -1,0 +1,9 @@
+Para calcular la direccion de ip se debe multiplicar con AND la IP 
+con la mascara en nuemro binario (1*1=1   1*0=0)
+
+128.128.128.0 = 10000000.1000000.10000000.00000000
+255.255.255.0 = 11111111.1111111.11111111.11111111
+
+direccion red = 10000000.1000000.10000000.00000000
+
+la multiplicacion es bit por bit y hacia abajo
