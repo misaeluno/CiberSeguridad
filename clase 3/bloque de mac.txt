@@ -1,0 +1,12 @@
+En general no puedes bloquear una mac en especifica para no entrar
+si que que activas un protocolo para que un puerto solo acepte 
+una mac en especifica.
+
+enble
+conf t
+int fa0/"puerto de enlace con dispositivo"
+sw mode access
+se port-security maximum "rango de dispositivos de 1-132"
+sw port-security mac-address "direccion mac o sticky"
+sw port-security violation protect
+
